@@ -385,6 +385,10 @@ COSMO is independently developed and open to discussions regarding:
 - **Acquisition**
 - **Strategic Partnership & Commercialization**
 
+### Business One-Pager
+
+[**View COSMO Business One-Pager (PDF)**](COSMO_Business_OnePager_FINAL.pdf)
+
 Technical due diligence or focused proof-of-concept validation can be discussed with serious interested parties.
 
 ### Contact
