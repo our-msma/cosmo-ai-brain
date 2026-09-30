@@ -12,7 +12,7 @@ COSMO is an experimental AI brain designed to learn continuously from experience
 
 ![COSMO Dynamic Cognitive Network](COSMO_Hero_FINAL.gif)
 
-*Real COSMO runtime visualization. Cognitive regions and routes shown here are generated from actual runtime execution data.*
+*Real COSMO runtime visualization generated from actual visited nodes, learning nodes, and signal propagation during execution.*
 
 ---
 
@@ -29,40 +29,33 @@ COSMO is an experimental AI brain designed to learn continuously from experience
 | Structural Growth | **PASS** |
 | Current Brain Package | **323.212 MB** |
 
-> **323.212 MB refers to the complete COSMO brain package—not model weights alone.**  
+> **323.212 MB is the complete persistent COSMO brain package—not model weights alone.**  
 > It includes neural structure, persistent memory, memory index, representation, and other persistent brain state.
->
-> ---
+
+---
 
 ## Why COSMO Started
 
-Large language models have demonstrated remarkable capabilities, but working with them also raises several fundamental questions:
+Large language models have demonstrated remarkable capabilities, but their use also raises fundamental questions:
 
-- How can an AI preserve useful knowledge and experience across time?
+- Can an AI preserve useful knowledge and experience across time?
 - Can it continue learning without repeatedly losing what it already knows?
 - Must useful intelligence begin with a very large pretrained model?
-- Can an AI begin with a relatively small cognitive structure and develop through experience?
+- Could an AI begin with a relatively small cognitive structure and develop through experience?
 
-Human intelligence does not begin fully formed.
-
-We learn from experience, compare new situations with previous ones, build memories, develop new capabilities, and adapt our internal structures over time.
+Human intelligence does not begin fully formed. We learn, remember, compare, adapt, and develop over time.
 
 COSMO began from a simple question:
 
 > **Must intelligence start large?**
 
-COSMO explores another possibility:
-
-> Start from a relatively small cognitive structure, learn continuously from experience, preserve useful knowledge, selectively use cognitive functions, and grow when additional capacity is needed.
+COSMO explores another possibility: begin with a relatively small cognitive structure, learn continuously from experience, preserve useful knowledge, selectively use cognitive functions, and grow when additional capacity is needed.
 
 COSMO is not presented as AGI. It is an experimental system investigating whether developmental and continual-learning principles can provide another path toward increasingly capable AI systems.
 
 ---
 
-
 ## A Different Starting Point
-
-COSMO explores a different design direction from conventional large-scale pretrained AI systems.
 
 | | Large Pretrained AI | COSMO Research Direction |
 |---|---|---|
@@ -73,16 +66,11 @@ COSMO explores a different design direction from conventional large-scale pretra
 | Structural change | Usually fixed after deployment | Structural growth when required |
 | Core question | How capable can a pretrained model become? | How capable can a learning brain become over time? |
 
-This is a **general design comparison**, not an absolute characterization of every LLM or AI architecture.
-
-COSMO is not intended to prove that one approach is universally better than another.
-
-It investigates a different question:
+This is a **general design comparison**, not an absolute characterization of every LLM or AI architecture, and does not claim that one approach is universally superior.
 
 > **What if useful AI capability could be accumulated instead of installed upfront?**
 
 ---
-
 
 ## Unknown Action Experiment
 
@@ -90,20 +78,7 @@ One of COSMO's key experiments began with an action token it did not know:
 
 ### `SHAKES`
 
-Initially, COSMO had no learned action concept corresponding to `SHAKES`.
-
-Instead of defining its meaning directly, COSMO was exposed to repeated experiences containing the unknown action.
-
-Through those experiences, the system:
-
-1. preserved the unresolved action evidence,
-2. accumulated repeated evidence,
-3. formed a new internal action concept,
-4. retained that concept in persistent memory,
-5. later recognized the learned action,
-6. reused it in a held-out situation.
-
-### Verified Result
+Instead of defining its meaning directly, COSMO was exposed to repeated experiences containing the unresolved action.
 
 ```text
 Unknown Action
@@ -121,7 +96,7 @@ Later Recognition
 Held-out Reuse
 ```
 
-The final held-out experiment confirmed:
+The final experiment confirmed:
 
 - Novel action concept formation: **PASS**
 - Persistent action concept: **PASS**
@@ -130,8 +105,9 @@ The final held-out experiment confirmed:
 - Target leakage: **0.0**
 - Held-out knowledge transfer: **PASS**
 
-`SHAKES` is an experimental token used in a controlled research micro-environment.  
-The result demonstrates formation and reuse of learned internal action knowledge within that experimental setting; it does **not** establish broad natural-language understanding.
+`SHAKES` is an experimental token used in a controlled research micro-environment.
+
+The result demonstrates formation and reuse of learned internal action knowledge within that setting; it does **not** establish broad natural-language understanding.
 
 ---
 
@@ -139,52 +115,30 @@ The result demonstrates formation and reuse of learned internal action knowledge
 
 COSMO does not activate every cognitive region for every experience.
 
-Instead, evidence from the current experience is used to determine which cognitive functions are relevant to the task.
+Evidence from the current experience determines which available cognitive functions participate in the runtime path, including functions such as:
 
-Depending on the experience, different regions can participate in the runtime path, including:
+**Perception · Attention · Context · Prediction · Evaluation · Learning · Reasoning**
 
-- Perception
-- Attention
-- Context
-- Prediction
-- Evaluation
-- Learning
-- Reasoning
+Verified experiments showed smaller cognitive routes for simpler experiences and additional participation from regions such as **Context**, **Prediction**, or **Reasoning** when relevant processing was demanded.
 
-The Dynamic Cognitive Network shown above is not a predefined animation.
+The Dynamic Cognitive Network above is generated from actual runtime execution data rather than a predefined animation.
 
-It is generated from actual COSMO runtime data, including:
-
-- visited cognitive nodes,
-- learning nodes,
-- signal propagation between nodes,
-- and the cognitive route selected during execution.
-
-In verified runtime experiments, simpler experiences activated a smaller cognitive route, while experiences requiring additional processing recruited additional cognitive regions such as **Context**, **Prediction**, or **Reasoning**.
-
-> **Not every available cognitive function is activated.  
-> COSMO selectively uses cognitive regions according to the demands detected from the current experience.**
+> **Not every available cognitive function is activated. COSMO selectively uses cognitive regions according to the demands detected from the current experience.**
 
 ---
 
 ## Structural Growth
 
-Selective activation changes **which existing cognitive resources are used**.
+Selective activation determines which existing resources participate. Structural Growth addresses what happens when additional capacity is required.
 
-Structural Growth addresses a different question:
-
-> **What happens when the existing cognitive structure is no longer sufficient?**
-
-COSMO includes a growth mechanism that can activate additional structural capacity when verified capacity conditions are reached.
-
-In a verified growth experiment:
+A verified experiment produced:
 
 ```text
 Repeated Functional Demand
         ↓
-Capacity Pressure Accumulates
+Capacity Pressure
         ↓
-Growth Condition Reached
+Growth Condition
         ↓
 LOCAL_GROWTH
         ↓
@@ -193,83 +147,56 @@ ATTENTION_RESERVE_001 Activated
 New Node Participates in Runtime
 ```
 
-The experiment confirmed:
-- Growth decision: LOCAL_GROWTH
-- Growth reason: REGION_CAPACITY_EXHAUSTED
-- Target region: ATTENTION
-- Reserve node activation: PASS
-- New node participation after growth: PASS
-This demonstrates structural expansion of an existing cognitive region under the tested conditions.
-It does not mean that COSMO autonomously invented an entirely new cognitive function.
-Two Forms of Growth
-COSMO distinguishes between two broader directions of development:
-Structural Growth
+Verified result:
+
+- Growth decision: **LOCAL_GROWTH**
+- Growth reason: **REGION_CAPACITY_EXHAUSTED**
+- Target region: **ATTENTION**
+- Reserve node activation: **PASS**
+- New node participation: **PASS**
+
+This demonstrates structural expansion of an existing cognitive region under the tested conditions. It does **not** mean COSMO autonomously invented an entirely new cognitive function.
+
+### Two Forms of Growth
+
+**Structural Growth**  
 Expansion of available cognitive structure when additional capacity is required.
-Existing Structure
-        ↓
-Capacity Demand
-        ↓
-Additional Node / Connection Capacity
-        ↓
-Expanded Structure
 
-Qualitative Growth
-Development of increasingly capable cognitive processing through learning and the integration of cognitive functions.
-COSMO's longer-term research direction is therefore not simply:
-more nodes
+**Qualitative Growth**  
+Development of increasingly capable cognitive processing through learning and integration of cognitive functions.
 
-but:
-better cognition + necessary structural growth
+The longer-term direction is not simply **more nodes**, but:
+
+> **better cognition + necessary structural growth**
 
 ---
 
 ## Persistent Memory & Restart Continuity
 
-Continual learning is useful only if previously acquired knowledge can survive beyond a single execution session.
+COSMO treats memory as part of the persistent cognitive system rather than temporary runtime context alone.
 
-COSMO therefore treats memory as part of the persistent cognitive system rather than as temporary runtime context alone.
-
-Verified experiments confirmed:
+Verified experiments include:
 
 - Internal memory persistence: **PASS**
-- External memory offload: **PASS**
-- External memory recall: **PASS**
-- Memory reinjection: **PASS**
+- External memory offload / recall / reinjection: **PASS**
 - Structural checkpoint restore: **PASS**
 - Memory availability after restart: **PASS**
-
-More importantly, COSMO was tested not only for restoration, but also for its ability to **continue learning after restoration**.
-
-```text
-Learn
-   ↓
-Store Knowledge
-   ↓
-Save Brain State
-   ↓
-Restart
-   ↓
-Restore Existing Knowledge
-   ↓
-Learn New Knowledge
-   ↓
-Save Again
-   ↓
-Fresh Restore
-   ↓
-Old + New Knowledge Preserved
-```
-
-The restart-continuity experiment confirmed:
-
-- Existing knowledge after restore: **PASS**
 - New learning after restore: **PASS**
 - New memory continuity after another restart: **PASS**
-- Advanced cognitive structure continuity: **PASS**
 - Stability after restore: **PASS**
 - Plasticity after restore: **PASS**
 
-This tests an important COSMO principle:
+```text
+Learn → Save → Restart → Restore
+                     ↓
+              Continue Learning
+                     ↓
+                 Save Again
+                     ↓
+               Fresh Restore
+                     ↓
+          Old + New Knowledge
+```
 
 > **Learning should continue across restarts without requiring the brain to begin again from zero.**
 
@@ -277,11 +204,7 @@ This tests an important COSMO principle:
 
 ## 1,000-Concept Continual Learning
 
-COSMO was also tested under a larger cumulative concept-learning workload.
-
-A single continuing COSMO instance was trained through **1,000 concepts**.
-
-Final verified result:
+A single continuing COSMO instance was tested through **1,000 concepts**.
 
 | Metric | Result |
 |---|---:|
@@ -294,22 +217,7 @@ Final verified result:
 | Plasticity | **PASS** |
 | Final test status | **PASS** |
 
-```text
-One COSMO
-    ↓
-Continual Learning
-    ↓
-1,000 Concepts
-    ↓
-Early Knowledge Retained
-Middle Knowledge Retained
-Late Knowledge Retained
-    ↓
-Stability PASS
-Plasticity PASS
-```
-
-This result demonstrates cumulative learning and retention under the tested experimental workload.
+This demonstrates cumulative learning and retention under the tested experimental workload.
 
 It does **not** establish unlimited learning capacity or real-world long-term stability.
 
@@ -318,8 +226,6 @@ It does **not** establish unlimited learning capacity or real-world long-term st
 ## Beyond Static Concepts
 
 COSMO is not intended to learn only isolated object concepts.
-
-Its learning experiments have been progressively expanded toward relationships, actions, events, temporal structure, causal evidence, and higher cognitive processing.
 
 Verified experimental areas include:
 
@@ -339,43 +245,31 @@ Verified experimental areas include:
 | Decision Processing | **PASS** |
 | Grounded Language Reuse | **PASS** |
 
-The developmental direction is broader than accumulating nouns or static labels:
+The developmental direction extends beyond static labels:
 
 ```text
-Features
-   ↓
-Comparison
-   ↓
-Concept
-   ↓
-Relation
-   ↓
-Actor / Action
-   ↓
-Event
-   ↓
-Change / Time
-   ↓
-Context
-   ↓
-Prediction
-   ↓
-Reasoning
-   ↓
-Goal / Planning / Decision
-   ↓
-Language
+Features → Comparison → Concept → Relation
+                         ↓
+                  Actor / Action
+                         ↓
+                       Event
+                         ↓
+                  Change / Time
+                         ↓
+                      Context
+                         ↓
+                    Prediction
+                         ↓
+                    Reasoning
+                         ↓
+             Goal / Planning / Decision
+                         ↓
+                     Language
 ```
 
-These capabilities were not all autonomously invented by COSMO.
+These cognitive functions were not all autonomously invented by COSMO. They were implemented and tested before integration; experiences can then produce evidence and demand that selectively activate relevant functions during actual execution and learning.
 
-Cognitive functions were implemented and independently tested, then connected to the COSMO runtime. Suitable experiences could then produce evidence and demand that selectively activated the relevant functions during actual execution and learning.
-
-The research question is therefore not simply:
-
-> **How many concepts can COSMO memorize?**
-
-It is also:
+The broader research question is:
 
 > **Can one persistent learning system gradually integrate increasingly diverse forms of experience and cognitive processing?**
 
@@ -385,52 +279,33 @@ It is also:
 
 COSMO also connects language with previously learned internal knowledge.
 
-In verified experiments, the previously formed `SHAKES` action concept could later be recognized and grounded when the learned knowledge was encountered through language.
-
-Held-out reuse was also verified.
-
-This demonstrates a connection between:
+In verified experiments, the learned `SHAKES` action concept could later be recognized, grounded through language, and reused in a held-out situation.
 
 ```text
 Language Input
       ↓
-Previously Learned Internal Knowledge
+Learned Internal Knowledge
       ↓
 Grounding
       ↓
 Reuse
 ```
 
-The current result is deliberately limited in scope.
-
-It demonstrates **grounded reuse of learned internal knowledge in the tested environment**, not broad natural-language understanding or general language intelligence.
+This demonstrates **grounded reuse of learned internal knowledge in the tested environment**, not broad natural-language understanding or general language intelligence.
 
 ---
 
 ## Cognitive Footprint
 
-COSMO's current persistent brain package was measured at:
-
 ### **323.212 MB**
 
-This is **not model-weight size alone**.
+This is the measured size of the current persistent `COSMO_M` brain package—not model weights alone.
 
-The package includes:
+It includes:
 
-- Neural structure
-- Persistent memory
-- Memory index
-- Representation
-- Other persistent brain state
+**Neural Structure · Persistent Memory · Memory Index · Representation · Persistent Brain State**
 
-```text
-COSMO_M Brain Package
-323.212 MB
-```
-
-This number is presented as a measured snapshot of the current experimental system.
-
-It does **not** by itself demonstrate greater efficiency than LLMs or other AI architectures.
+The measurement does **not** by itself demonstrate greater efficiency than LLMs or other AI architectures.
 
 COSMO's goal is not to remain permanently small, but to pursue efficient growth relative to acquired capability.
 
@@ -440,7 +315,7 @@ COSMO's goal is not to remain permanently small, but to pursue efficient growth 
 
 ## Target Environments
 
-COSMO's architecture is being explored with potential future environments such as:
+Potential future environments include:
 
 - On-Device AI
 - Edge AI
@@ -448,7 +323,7 @@ COSMO's architecture is being explored with potential future environments such a
 - Robotics / Embodied AI
 - Autonomous Systems
 
-These are **target environments**, not currently validated deployment claims.
+These are **target environments, not currently validated deployment claims.**
 
 ---
 
@@ -456,9 +331,7 @@ These are **target environments**, not currently validated deployment claims.
 
 COSMO is an **experimental research system**, not a finished general-purpose AI product.
 
-Current evidence supports specific tested capabilities, including continual learning, persistent memory, selective cognitive activation, structural growth, restart continuity, and several forms of cognitive processing.
-
-It does **not** currently establish:
+Current evidence does **not** establish:
 
 - AGI or general intelligence
 - Broad natural-language understanding
@@ -467,9 +340,9 @@ It does **not** currently establish:
 - Real-world long-term stability
 - Production readiness across the target environments
 
-The project will continue to distinguish between:
+COSMO distinguishes between:
 
-**Implemented → Tested → Verified → Long-term Validated**
+> **Implemented → Tested → Verified → Long-term Validated**
 
 These are not treated as equivalent claims.
 
@@ -477,16 +350,14 @@ These are not treated as equivalent claims.
 
 ## Development Direction
 
-COSMO will continue to explore:
+Current research directions include:
 
 - more diverse and complex experiences,
 - longer-term continual learning,
-- deeper integration between memory and cognition,
+- deeper memory–cognition integration,
 - qualitative development of cognitive capabilities,
 - structural growth when additional capacity is required,
-- and efficient Cognitive Footprint as capability increases.
-
-The long-term research direction is simple:
+- efficient Cognitive Footprint as capability increases.
 
 > **Start Small. Learn Continuously. Grow Smarter. Stay Efficient.**
 
@@ -495,8 +366,6 @@ The long-term research direction is simple:
 ## Evidence
 
 COSMO's public claims are based on executed experiments and recorded runtime results.
-
-The project follows a simple evidence rule:
 
 > **Results First. Direction Visible. Mechanism Protected. Claims Evidence-Bounded.**
 
@@ -508,13 +377,13 @@ Additional experiment summaries and selected evidence may be published progressi
 
 ## Business & Collaboration
 
-COSMO is independently developed and is open to discussions regarding:
+COSMO is independently developed and open to discussions regarding:
 
-- Investment
-- Technology Licensing
-- Technology Transfer / Sale
-- Acquisition
-- Strategic Partnership & Commercialization
+- **Investment**
+- **Technology Licensing**
+- **Technology Transfer / Sale**
+- **Acquisition**
+- **Strategic Partnership & Commercialization**
 
 Technical due diligence or focused proof-of-concept validation can be discussed with serious interested parties.
 
@@ -528,6 +397,6 @@ For business, investment, research, or strategic collaboration inquiries, please
 
 **Experimental Research System — Active Development**
 
-COSMO is not presented as AGI or as a finished commercial product.
+COSMO is not presented as AGI or a finished commercial product.
 
 Its current purpose is to experimentally investigate whether an AI system can begin from a relatively small cognitive structure and progressively **learn, remember, adapt, and grow through experience**.
